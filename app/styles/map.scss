@@ -1,0 +1,69 @@
+.left-panel{
+	width: 30px; //300px;
+	height: 30px; //100%;
+	display: block;
+	position: absolute;
+	background-color: #EEEEEE;
+	z-index: 999;
+	overflow: scroll;
+	transition: left 0.1s ease-out 0s; // THIS IS NOT WORKING
+	border-right: #ccc solid 1px;
+	border-bottom: #ccc solid 1px;
+}
+.main-panel{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.map{
+	margin-left: 0; // 300px;
+	height: 100%;
+	text-align: center;
+}
+.toggle-left-panel{
+	font-size: 18px;
+	text-align: right;
+	padding-right: 5px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+.toggle-left-panel span{
+	cursor: pointer;
+	float: right;
+	display:block;
+}
+.table-map-nav tbody tr {
+	cursor: pointer;
+}
+// Map overlay 
+.modal-lg{
+	width: 100%;
+	max-width: 720px;
+
+}
+.modal-body .lead{
+	margin-bottom: 0;
+}
+.modal-body .lead p{
+	margin: 2px 0 2px;
+}
+.street-view{
+	background-color: #e7e7e7;
+	//margin: auto;
+	text-align: center;
+	max-height: 420px;
+	max-width: 640px;
+	margin: 2px auto 0;
+	height: 210px;
+}
+.carousel-inner{
+	max-width: 640px;
+	margin: 0 auto 0;
+}
+.pointer{
+	cursor: pointer;
+}
+#modalContent{
+	width: 640px;
+}
+// Responsvie Default

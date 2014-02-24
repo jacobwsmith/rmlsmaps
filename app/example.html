@@ -1,0 +1,477 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+
+    <script type="text/javascript">
+    <!--
+    var G_V2_BaseURL='/V2';
+    //-->
+    </script>
+
+<meta http-equiv="Content-Language" content="en" />
+<meta http-equiv="Content-type" content="text/html;charset=windows-1252" />
+
+
+<link rel="stylesheet" type="text/css" href="../css/v3/main.css" />
+<link rel="stylesheet" type="text/css" href="../css/v3/report.css" />
+
+
+
+    <script type='text/JavaScript'>
+    <!--
+    function MGS_ShowMap(strURL) {
+        return MGS_ShowMap_Ex(strURL, 'GEOJET_BING');
+    }
+
+    function MGS_ShowMap_Ex(strURL, strMapType) {
+        var strOptions = "";
+        if (strMapType == 'GEOJET_BING') {
+            strOptions = 'width=1045,height=800,scrollbars=yes,resizable=yes,top=10,left=10';
+        }
+        if (strMapType == 'GEOJET') {
+            strOptions = 'width=985,height=700,scrollbars=yes,resizable=yes,top=10,left=10';
+        }
+        if (strMapType == 'YAHOO') {
+            strOptions = 'height=700,width=850,scrollbars=yes,resizable=yes,top=10,left=10';
+        }
+        var winMap = window.open(strURL, 'Map', strOptions);
+        if (winMap) winMap.focus();
+    }
+
+    function MGS_ShowMapForListing_Old(listingid, proptype, inprogress) {
+        $.get('../maps/mapSubjectProperty.asp?listing_id=' + listingid + '&prop_type=' + proptype + "&inprogress=" + inprogress, function (data) {
+            var strOptions = 'width=1045,height=800,scrollbars=yes,resizable=yes,top=10,left=10';
+            var winMap = window.open(data, 'Map', strOptions);
+            if (winMap) winMap.focus();
+        });
+    }
+
+    /*function MGS_ShowMapForListing(listingid, proptype, inprogress) {
+        //$.get('../maps/mapSubjectProperty.asp?listing_id=' + listingid + '&prop_type=' + proptype + "&inprogress=" + inprogress, function (data) {
+            var strOptions = 'width=1045,height=800,scrollbars=yes,resizable=yes,top=10,left=10';
+            var winMap = window.open(MGS_GenMapUrlForListing(listingid,proptype,inprogress), 'Map', strOptions);
+            if (winMap) winMap.focus();
+        }//);*/
+
+    function MGS_ShowMapForTax(taxid, countyid) {
+        $.get('../maps/mapSubjectProperty.asp?tax_id=' + taxid + '&county_id=' + countyid, function (data) {
+            var strOptions = 'width=1045,height=800,scrollbars=yes,resizable=yes,top=10,left=10';
+            var winMap = window.open(data, 'Map', strOptions);
+            if (winMap) winMap.focus();
+        });
+    }
+    //-->
+    </script>
+    
+<title>RMLSweb - Client Short</title>
+
+<link rel="stylesheet" type="text/css" href="../css/v3/report_lgc.css" />
+
+
+<script type='text/javascript' src="../lib3rd/jquery/jquery-1.3.2.min.js"></script>  
+
+<script type='text/JavaScript' src="../js/inc_progressmsg.js"></script>
+<script type='text/JavaScript' src="../js/inc_report.js"></script>
+<script type='text/JavaScript' src="../js/inc_functions_comfields.js"></script>
+<script type='text/JavaScript' src="../js/inc_form.js"></script>
+<script type='text/JavaScript' src="../include/js_functions.asp"></script>
+<script type='text/JavaScript' src="../ui/include/js_form_functions.asp"></script>
+
+
+<script type='text/JavaScript'>
+<!--    //
+    var photocaptions = {}; //
+    var photourls = {}; //
+//-->
+</script>
+
+<link rel="stylesheet" type="text/css" href="../subsys/ecard/css/ecard_CL.css" />
+
+    <style type='text/css'>
+    .V2_REPORT_ROW td, .V2_REPORT_ROW_G td
+    {
+        /*font-size: 10pt; 'JH 4/21/2009 RCR-116. Already specified in report_lgc.css*/
+    }
+    </style>
+
+
+<script type="text/javascript" src="/v2/shared/js_sharedfunctions.asp?20140127_0914"></script>
+
+
+<style type="text/css">
+a.SYSTEMHELPLINK,a.SYSTEMHELPLINK:visited
+{
+    text-decoration:none;
+    color: #00F;
+    font-size: 9pt;
+}
+</style>
+
+
+<script type="text/javascript" src="/v2/menu/inc_menu_js_v3.js?20140127_0914"></script>
+<link rel="stylesheet" type="text/css" href="/v2/menu/menu_v6.css?20140127_0914" /> 
+
+
+</head>
+
+
+    <body class='PAGE_BODY'>
+    <div><a name="PAGE_TOP"></a></div>
+<div id='MainScreen_Outer'  class="SEARCH_BODY_OUTER"
+>
+<script>$('#RMLSWEB_PAGE1B').css('width','761px');</script>
+<div id='MainScreen_InnerShade'  class="SEARCH_BODY_INNER_SHADE" >
+<div id='MainScreen_Inner'  class="SEARCH_BODY_INNER" >
+<div class='ECARD_OUTER'>
+<div id='ECARD'>
+<table cellspacing='0' cellpadding='0' class='ECARD_TABLE'>
+<tr>
+<td width='120' align='left' valign='top'><div class='AGENT_PHOTO'>
+<img src="/v4/public/getfile.aspx?type=PREF&amp;id=1000&amp;mid=63619&amp;oid=4075" alt='The Agent Photo' />
+</div></td>
+<td valign='top'>
+<table border='0' cellspacing='0' cellpadding='0' width='100%'>
+<tr>
+<td valign='top'>
+<div class='BANNER'></div>
+</td>
+</tr>
+<tr>
+<td  valign='top'>
+<div class='INFOBOX'>
+<table border='0' cellspacing='0' cellpadding='0' width='100%' class='MYLISTINGS'>
+<tr>
+<td valign='top'>
+<div class='NAME'></div><div class='NAMETITLE'></div><div class='COMPANY_NAME'></div><div class='ADDRESS1'></div><div class='ADDRESS2'>,  </div>
+</td>
+<td valign='top'>
+
+<a href='/v2/public/report.asp?CRPT2=HQ0JHFVbDi5RCR0zBGwwZHFlXX2A0Pw0EETELB1EwZCsoKyAqagzDzD3eRVcev4NzBuVHuixzG50ghwzDzDdgh' target='_blank'>My Listings</a><br />
+<div class='MORTGAGECALC'>
+<a href="javascript:MortgageCalc();">
+<img src="/v2/subsys/ecard/images/mortgage_calc.gif" border='0' alt="Mortgage Calculator" width='30' height='24' align='middle' />
+ Mortgage Calculator</a>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width='120' align='right' valign='top'>
+<div class='OFFICE_PHOTO'>
+<img src="/v4/public/getfile.aspx?g=O&amp;type=PREF&amp;id=2000&amp;mid=63619&amp;oid=4075" alt='The Office Photo' />
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+<div id='NONPRINTSECTION_PAGENAV'>
+<table border='0' width='100%' cellspacing='0' cellpadding='0' id='PAGE_HEADER'><tr>
+<td colspan='2' valign='top' style='text-align:left; height:30px; width:400;'><table cellspacing='0' cellpadding='0'><tr><td><span class='PAGE_TITLE_MAIN'>Client Short</span><br /><span class='PAGE_TITLE_SUB'>Residential</span></td><td style='padding-left:10px;'><input type="button" id="SystemHelpButton" name="SystemHelpButton_button" value="Help" style='display:none;' /><div id="SystemHelpButton_menu" class="yuimenu" style="display:none;"></div></td></tr></table></td>
+<td style='height:29px' align='right'>
+<table border='0' cellspacing='0' cellpadding='0' style='padding:0px;margin:0px;display:block-inline;' > 
+<tr>
+<td width='2' style='vertical-align:top;' ></td>
+<td style='vertical-align:bottom;text-align:center;' ><a class='np LINK_NAV_NOICON'  href='#'  onclick="javascript:GenReport_OpenPrintHelp();;return false;"  >Print Help</a>
+</td>
+<td width='2' style='vertical-align:top;' ></td>
+<td style='vertical-align:bottom;text-align:center;' ><a class='np LINK_NAV'  href='#'  onclick="javascript:GenReport_OpenPrintPreview('report.asp?PMD=1&amp;type=AE&amp;CRPT2=BgUFB2ddDnZfXVNdQ1RYWAzDzDmB9XEWSnE2Y3OFBYM64v7AzDzDdgh&amp;MLID_ARRAY_S=1');;return false;"  ><img class='NAV' alt='Print' src='/V2/images/icons/print2.gif' /> 
+Print</a>
+</td>
+</tr>
+</table>
+</td>
+<td style='padding-right:2px;'><br /></td>
+</tr>
+</table>
+
+</div>
+
+
+
+<form name='mainform' action='report.asp' method='post' 
+style='padding:0px;margin:0px;' >
+<input type='hidden' name='type' value='AE' />
+<input type='hidden' name='CRPT2' value='BgUFB2ddDnZfXVNdQ1RYWAzDzDmB9XEWSnE2Y3OFBYM64v7AzDzDdgh' />
+<input type='hidden' name='SetViewed' value='1' />
+<input type='hidden' name='RID' value='@LGC_CLSHORT' />
+<input type='hidden' name='SCHT' value='JigzD68KeL29p40W3hhzCmeKpEJwzDzDdgh' />
+<input type='hidden' name='SCHT' value='ML' />
+<input type='hidden' name='OBD' value='' />
+<input type='hidden' name='MLID_ARRAY' value='' />
+<input type='hidden' name='DMD' value='0' />
+<input type='hidden' name='PrevID' value='' />
+<input type='hidden' name='NextID' value='' />
+<input type='hidden' name='FormURL' value='' />
+<input type='hidden' name='ViewedItems' id='ViewedItems' value='' />
+<div id='RG_RESULTMESSAGE'>
+</div><!-- RG_RESULTMESSAGE -->
+<div style='padding:4px;' class='np'><table border='0' width='100%' cellspacing='0' cellpadding='0' style='padding:0px;'><tr><td align='left' width='170'><div class='REPORT_TOTALCOUNT'>Total <span id='RG_TOTALCOUNT'>8</span> Records</div></td><td align='right' width='210'><div id='REPORTOUTPUT_PROGRESS'></div></td><td align='right'><table border='0' cellspacing='0' cellpadding='0' style='padding:0px;margin:0px;'><tr><td> <span class='ITEM_CMD_LINK'>[<a class='ITEM_CMD_LINK'  id='btnCheckAll' href='#'  onclick="javascript:GenReport_CheckAll(true);;return false;" >Check All</a>]</span>
+</td><td width='3'></td><td> <span class='ITEM_CMD_LINK'>[<a class='ITEM_CMD_LINK'  id='btnUncheckAll' href='#'  onclick="javascript:GenReport_CheckAll(false);;return false;" >Uncheck All</a>]</span>
+</td><td width='3'></td><td> <a class='LINK_CMD2'  id='btnChecked' href='#'  onclick="javascript:GenReport_Load_Checked('@LGC_CLSHORT');;return false;" title="Show only checked items" >Checked</a>
+</td><td width='3'></td><td> <a class='LINK_CMD2'  id='btnShowAll' href='#'  onclick="javascript:GenReport_Load_All('@LGC_CLSHORT');;return false;" title="Show all items" >Show All</a>
+</td><td width='3'></td></tr></table></td></tr></table>
+</div>
+<div class='RG_REPORT' >
+<table border='0' cellspacing='0' cellpadding='0' class='REPORT_TABLE' width='100%'>
+<!-- 20 -->
+<tr class='ROW'>
+
+<td><div class='REPORT_STDBOX'><!-- ================================================================================================== --><!-- RID=[ClientShort] PropType=[1] --><!-- Photo Block Begin --><div class='V2_REPORT_SUBREPORT'><table width='100%' border='0' cellpadding='0' cellspacing='0' class='V2_REPORT_PHOTOTABLE'><tr><td style="width:20%"><!--#PHOTO--><script type='text/javascript'>
+function SetPhotoCaptionData_LGC_CLSHORT_14419207(){
+photocaptions['photo14419207']={};
+photourls['photo14419207']="14400000/10000/9000/";
+photocaptions['photo14419207'][1]="";
+}
+SetPhotoCaptionData_LGC_CLSHORT_14419207();
+</script>
+<!-- bPhotoNavigation=True--><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_PHOTO_SMALL'><tr><td align='center' valign='top'><a href='#'  id='linkPhotoViewerMLN_14419207'  onclick="PhotoViewer('?CRPT2=IXgUGzBIMaXJdA3NUCV1DNhxycXIhdSwPL3wAMh4CbHQlWhcgGVYqIxpBd1YzDgzGG3EzCzGt2RvNMPuF22pvyAzDzDdgh');return false;" ><img src='/WEBPHOTOS/14400000/10000/9000/14419207-1.jpg?t=20140221211218' id='PHOTO_14419207' alt='MLS#14419207' class='PHOTO' /></a><div class='photocaption' id='photocaption_text_14419207'></div></td></tr></table></td><td valign='top'><!-- --><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:8%"  class='V2R_LB' >ML#:</td><td style="width:17%"  class='V2R_L' >14419207</td><td style="width:8%"  class='V2R_LB' >Area:</td><td style="width:10%"  class='V2R_L' >142</td><td style="width:10%"  class='V2R_LB' >Status:</td><td style="width:10%"  class='V2R_L' >ACT</td><td style="width:8%"  class='V2R_LB' >Price:</td><td style="width:20%"  class='V2R_L' >$275,000</td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:9%"  class='V2R_LB' >Address:</td><td style="width:34%"  class='V2R_L' >623 NE SACRAMENTO ST <a id='linkMapLink_14419207' href="javascript:MGS_ShowMap_Ex('http%3A%2F%2Frmls%2Ee%2Dmapping%2Ecom%2Fgv5%2Fv5ajax%2Fptdv2%2Fgeojet5%2Easp%3Flat%3D45%2E539743%26lon%3D%2D122%2E659028%26address%3D623+NE+SACRAMENTO+ST%2C+Portland%2C+97212%26apn%3DR101842%26bdrms%3D4%26date%5Flist%3D2%2F20%2F2014%26Lot%2BSize%3D0%252D2%252C999SF+%280%2E06%29%26price%3D%24275%2C000%26status%3DACT%26sqft%3D2509%26prop%5Ftype%3DDETACHD%26mls%5Fnumber%3D14419207%26baths%5Ftot%3D1%2E1%26ctyid%3D7%26prop%5Fcat%3DRES%26Photo%3Dhttp%3A%2F%2Fwww%2Ermlsweb%2Ecom%2FWEBPHOTOS%2F14400000%2F10000%2F9000%2F14419207%2D1%2Ejpg','GEOJET_BING');"  class='MAPLINK_ADDRESS_FULL' ><span class='BOXLINK BOXICON_M np' title='Map This Address'>&nbsp;M&nbsp;</span></a></td><td style="width:5%"  class='V2R_LB' >City:</td><td style="width:17%"  class='V2R_L' ><a id='linkUrlCity0' href='http://www.portlandonline.com/'  target='_blank' class='VIRTUALTOUR' title='City Web Site'>Portland</a></td><td style="width:6%"  class='V2R_LB' >Zip:</td><td style="width:5%"  class='V2R_L' >97212</td><td style="width:14%"  class='V2R_L' ></td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:10%"  class='V2R_LB' >XST/Dir:</td><td style="width:90%"  class='V2R_L' >NE Broadway, N on NE 7th, W on NE Sacramento</td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:14%"  class='V2R_LB' >Bed/Baths:</td><td style="width:9%"  class='V2R_L' >4/1.1</td><td style="width:8%"  class='V2R_LB' >SQFT:</td><td style="width:14%"  class='V2R_L' >2509</td><td style="width:10%"  class='V2R_LB' >YrBuilt:</td><td style="width:9%"  class='V2R_L' >1895</td><td style="width:8%"  class='V2R_LB' >Style:</td><td style="width:28%"  class='V2R_L' >BUNGALO</td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:15%"  class='V2R_LB' >Map Coord:</td><td style="width:11%"  class='V2R_L' >596/G/3</td><td style="width:8%"  class='V2R_LB' >Type:</td><td style="width:14%"  class='V2R_L' >DETACHD</td><td style="width:10%"  class='V2R_LB' >PTax/Yr:</td><td style="width:11%"  class='V2R_L' >$1,684.48</td><td style="width:10%"  class='V2R_LB' >LotSize:</td><td style="width:23%"  class='V2R_L' >0-2,999SF</td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:6%"  class='V2R_LB' >View:</td><td style="width:37%"  class='V2R_L' ></td><td style="width:8%"  class='V2R_LB' >Garage:</td><td style="width:10%"  class='V2R_L' >0/</td><td style="width:8%"  class='V2R_LB' >Acres:</td><td style="width:15%"  class='V2R_L' >0.06</td></tr></table></td></tr></table></div><!-- Photo Block End --><!-- ================================================================================================== --></div><!-- REPORT_STDBOX --></td>
+<td width='20' class='np' valign='bottom'style='padding-left:3px;'><input type='checkbox' id='ItemCheckBox_14419207' name='MLID' value='14419207' class='np'onclick='GenReport_Check(this);'  /><span class='SPECIFIC_ORDER_LABEL' id='ORD_14419207'></span></td>
+</tr>
+<tr class='ROW'>
+
+<td><div class='REPORT_STDBOX'><!-- ================================================================================================== --><!-- RID=[ClientShort] PropType=[1] --><!-- Photo Block Begin --><div class='V2_REPORT_SUBREPORT'><table width='100%' border='0' cellpadding='0' cellspacing='0' class='V2_REPORT_PHOTOTABLE'><tr><td style="width:20%"><!--#PHOTO--><script type='text/javascript'>
+function SetPhotoCaptionData_LGC_CLSHORT_14187477(){
+photocaptions['photo14187477']={};
+photourls['photo14187477']="14100000/80000/7000/";
+photocaptions['photo14187477'][1]="";
+photocaptions['photo14187477'][2]="";
+photocaptions['photo14187477'][3]="";
+photocaptions['photo14187477'][4]="";
+photocaptions['photo14187477'][5]="";
+photocaptions['photo14187477'][6]="";
+photocaptions['photo14187477'][7]="";
+photocaptions['photo14187477'][8]="";
+photocaptions['photo14187477'][9]="";
+photocaptions['photo14187477'][10]="";
+photocaptions['photo14187477'][11]="";
+photocaptions['photo14187477'][12]="";
+}
+SetPhotoCaptionData_LGC_CLSHORT_14187477();
+</script>
+<!-- bPhotoNavigation=True--><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_PHOTO_SMALL'><tr><td align='center' valign='top'><a href='#'  id='linkPhotoViewerMLN_14187477'  onclick="PhotoViewer('?CRPT2=IXgUGzBIMaXJYCn1SDl1DNhxycXIhdSwPL3wAMh4CbHQlWhcgGVYqIxpBd1YzDhOQMRaxcKVZJ0tMeigfLvQzDzDdgh');return false;" ><img src='/WEBPHOTOS/14100000/80000/7000/14187477-1.jpg?t=20140221211218' id='PHOTO_14187477' alt='MLS#14187477' class='PHOTO' /></a><div class='photocaption' id='photocaption_text_14187477'></div><div class='PHOTO_NAV np'><a id='linkShowPhotoPrev_14187477' href='#' onclick="GenReport_PhotoSelect(14187477,'prev',12);return false;" >&laquo;</a><a href='#' onmouseover="GenReport_PhotoSelect(14187477,1,12);return false;" onclick='return false;' id='PHOTONAV_14187477_1'  class='PHOTO_SELECTED' >1</a><a href='#' onmouseover="GenReport_PhotoSelect(14187477,2,12);return false;" onclick='return false;' id='PHOTONAV_14187477_2' >2</a><a href='#' onmouseover="GenReport_PhotoSelect(14187477,3,12);return false;" onclick='return false;' id='PHOTONAV_14187477_3' >3</a><a href='#' onmouseover="GenReport_PhotoSelect(14187477,4,12);return false;" onclick='return false;' id='PHOTONAV_14187477_4' >4</a><a href='#' onmouseover="GenReport_PhotoSelect(14187477,5,12);return false;" onclick='return false;' id='PHOTONAV_14187477_5' >5</a><a href='#' onmouseover="GenReport_PhotoSelect(14187477,6,12);return false;" onclick='return false;' id='PHOTONAV_14187477_6' >6</a><a href='#' onmouseover="GenReport_PhotoSelect(14187477,7,12);return false;" onclick='return false;' id='PHOTONAV_14187477_7' >7</a><a href='#' onmouseover="GenReport_PhotoSelect(14187477,8,12);return false;" onclick='return false;' id='PHOTONAV_14187477_8' >8</a><br /><a href='#' onmouseover="GenReport_PhotoSelect(14187477,9,12);return false;" onclick='return false;' id='PHOTONAV_14187477_9' >9</a><a href='#' onmouseover="GenReport_PhotoSelect(14187477,10,12);return false;" onclick='return false;' id='PHOTONAV_14187477_10' >10</a><a href='#' onmouseover="GenReport_PhotoSelect(14187477,11,12);return false;" onclick='return false;' id='PHOTONAV_14187477_11' >11</a><a href='#' onmouseover="GenReport_PhotoSelect(14187477,12,12);return false;" onclick='return false;' id='PHOTONAV_14187477_12' >12</a><a id='linkShowPhotoNext_14187477'  href='#' onclick="GenReport_PhotoSelect(14187477,'next',12);return false;" >&raquo;</a><br /><a id='linkPhotoViewer_14187477' class='PHOTO_NAV_HELP' href='#'  onclick="PhotoViewer('?CRPT2=IXgUGzBIMaXJYCn1SDl1DNhxycXIhdSwPL3wAMh4CbHQlWhcgGVYqIxpBd1YzDhOQMRaxcKVZJ0tMeigfLvQzDzDdgh');return false;">(Click the image to use the photo viewer)</a></div></td></tr></table></td><td valign='top'><!-- --><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:8%"  class='V2R_LB' >ML#:</td><td style="width:17%"  class='V2R_L' >14187477</td><td style="width:8%"  class='V2R_LB' >Area:</td><td style="width:10%"  class='V2R_L' >142</td><td style="width:10%"  class='V2R_LB' >Status:</td><td style="width:10%"  class='V2R_L' >ACT</td><td style="width:8%"  class='V2R_LB' >Price:</td><td style="width:20%"  class='V2R_L' >$389,950</td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:9%"  class='V2R_LB' >Address:</td><td style="width:34%"  class='V2R_L' >4049 NE 42ND AVE <a id='linkMapLink_14187477' href="javascript:MGS_ShowMap_Ex('http%3A%2F%2Frmls%2Ee%2Dmapping%2Ecom%2Fgv5%2Fv5ajax%2Fptdv2%2Fgeojet5%2Easp%3Flat%3D45%2E552556%26lon%3D%2D122%2E620675%26address%3D4049+NE+42ND+AVE%2C+Portland%2C+97213%26apn%3DR309627%26bdrms%3D3%26date%5Flist%3D1%2F22%2F2014%26Lot%2BSize%3D5K%252D6%252C999SF+%280%2E12%29%26price%3D%24389%2C950%26status%3DACT%26sqft%3D2160%26prop%5Ftype%3DDETACHD%26mls%5Fnumber%3D14187477%26baths%5Ftot%3D1%2E1%26ctyid%3D7%26prop%5Fcat%3DRES%26Photo%3Dhttp%3A%2F%2Fwww%2Ermlsweb%2Ecom%2FWEBPHOTOS%2F14100000%2F80000%2F7000%2F14187477%2D1%2Ejpg','GEOJET_BING');"  class='MAPLINK_ADDRESS_FULL' ><span class='BOXLINK BOXICON_M np' title='Map This Address'>&nbsp;M&nbsp;</span></a></td><td style="width:5%"  class='V2R_LB' >City:</td><td style="width:17%"  class='V2R_L' ><a id='linkUrlCity1' href='http://www.portlandonline.com/'  target='_blank' class='VIRTUALTOUR' title='City Web Site'>Portland</a></td><td style="width:6%"  class='V2R_LB' >Zip:</td><td style="width:5%"  class='V2R_L' >97213</td><td style="width:14%"  class='V2R_L' > - 1011</td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:10%"  class='V2R_LB' >XST/Dir:</td><td style="width:90%"  class='V2R_L' >FREEMONT TO 42ND NORTH TO HOME</td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:14%"  class='V2R_LB' >Bed/Baths:</td><td style="width:9%"  class='V2R_L' >3/1.1</td><td style="width:8%"  class='V2R_LB' >SQFT:</td><td style="width:14%"  class='V2R_L' >2160</td><td style="width:10%"  class='V2R_LB' >YrBuilt:</td><td style="width:9%"  class='V2R_L' >1927</td><td style="width:8%"  class='V2R_LB' >Style:</td><td style="width:28%"  class='V2R_L' >CAPECOD, A-FRAME</td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:15%"  class='V2R_LB' >Map Coord:</td><td style="width:11%"  class='V2R_L' >597/B/1</td><td style="width:8%"  class='V2R_LB' >Type:</td><td style="width:14%"  class='V2R_L' >DETACHD</td><td style="width:10%"  class='V2R_LB' >PTax/Yr:</td><td style="width:11%"  class='V2R_L' >$3,268.24</td><td style="width:10%"  class='V2R_LB' >LotSize:</td><td style="width:23%"  class='V2R_L' >5K-6,999SF</td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:6%"  class='V2R_LB' >View:</td><td style="width:37%"  class='V2R_L' ></td><td style="width:8%"  class='V2R_LB' >Garage:</td><td style="width:10%"  class='V2R_L' >1/ATTACHD</td><td style="width:8%"  class='V2R_LB' >Acres:</td><td style="width:15%"  class='V2R_L' >0.12</td></tr></table></td></tr></table></div><!-- Photo Block End --><!-- ================================================================================================== --></div><!-- REPORT_STDBOX --></td>
+<td width='20' class='np' valign='bottom'style='padding-left:3px;'><input type='checkbox' id='ItemCheckBox_14187477' name='MLID' value='14187477' class='np'onclick='GenReport_Check(this);'  /><span class='SPECIFIC_ORDER_LABEL' id='ORD_14187477'></span></td>
+</tr>
+<tr class='ROW'>
+
+<td><div class='REPORT_STDBOX'><!-- ================================================================================================== --><!-- RID=[ClientShort] PropType=[1] --><!-- Photo Block Begin --><div class='V2_REPORT_SUBREPORT'><table width='100%' border='0' cellpadding='0' cellspacing='0' class='V2_REPORT_PHOTOTABLE'><tr><td style="width:20%"><!--#PHOTO--><script type='text/javascript'>
+function SetPhotoCaptionData_LGC_CLSHORT_14512171(){
+photocaptions['photo14512171']={};
+photourls['photo14512171']="14500000/10000/2000/";
+photocaptions['photo14512171'][1]="";
+photocaptions['photo14512171'][2]="";
+photocaptions['photo14512171'][3]="";
+photocaptions['photo14512171'][4]="";
+photocaptions['photo14512171'][5]="";
+photocaptions['photo14512171'][6]="";
+photocaptions['photo14512171'][7]="";
+photocaptions['photo14512171'][8]="";
+photocaptions['photo14512171'][9]="";
+photocaptions['photo14512171'][10]="";
+photocaptions['photo14512171'][11]="";
+photocaptions['photo14512171'][12]="";
+photocaptions['photo14512171'][13]="";
+photocaptions['photo14512171'][14]="";
+photocaptions['photo14512171'][15]="";
+photocaptions['photo14512171'][16]="";
+}
+SetPhotoCaptionData_LGC_CLSHORT_14512171();
+</script>
+<!-- bPhotoNavigation=True--><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_PHOTO_SMALL'><tr><td align='center' valign='top'><a href='#'  id='linkPhotoViewerMLN_14512171'  onclick="PhotoViewer('?CRPT2=IXgUGzBIMaXJcA3hXDltDNhxycXIhdSwPL3wAMh4CbHQlWhcgGVYqIxpBd1YzDSGpD41kIAOhUgPmJFnt5RwzDzDdgh');return false;" ><img src='/WEBPHOTOS/14500000/10000/2000/14512171-1.jpg?t=20140221211218' id='PHOTO_14512171' alt='MLS#14512171' class='PHOTO' /></a><div class='photocaption' id='photocaption_text_14512171'></div><div class='PHOTO_NAV np'><a id='linkShowPhotoPrev_14512171' href='#' onclick="GenReport_PhotoSelect(14512171,'prev',16);return false;" >&laquo;</a><a href='#' onmouseover="GenReport_PhotoSelect(14512171,1,16);return false;" onclick='return false;' id='PHOTONAV_14512171_1'  class='PHOTO_SELECTED' >1</a><a href='#' onmouseover="GenReport_PhotoSelect(14512171,2,16);return false;" onclick='return false;' id='PHOTONAV_14512171_2' >2</a><a href='#' onmouseover="GenReport_PhotoSelect(14512171,3,16);return false;" onclick='return false;' id='PHOTONAV_14512171_3' >3</a><a href='#' onmouseover="GenReport_PhotoSelect(14512171,4,16);return false;" onclick='return false;' id='PHOTONAV_14512171_4' >4</a><a href='#' onmouseover="GenReport_PhotoSelect(14512171,5,16);return false;" onclick='return false;' id='PHOTONAV_14512171_5' >5</a><a href='#' onmouseover="GenReport_PhotoSelect(14512171,6,16);return false;" onclick='return false;' id='PHOTONAV_14512171_6' >6</a><a href='#' onmouseover="GenReport_PhotoSelect(14512171,7,16);return false;" onclick='return false;' id='PHOTONAV_14512171_7' >7</a><a href='#' onmouseover="GenReport_PhotoSelect(14512171,8,16);return false;" onclick='return false;' id='PHOTONAV_14512171_8' >8</a><br /><a href='#' onmouseover="GenReport_PhotoSelect(14512171,9,16);return false;" onclick='return false;' id='PHOTONAV_14512171_9' >9</a><a href='#' onmouseover="GenReport_PhotoSelect(14512171,10,16);return false;" onclick='return false;' id='PHOTONAV_14512171_10' >10</a><a href='#' onmouseover="GenReport_PhotoSelect(14512171,11,16);return false;" onclick='return false;' id='PHOTONAV_14512171_11' >11</a><a href='#' onmouseover="GenReport_PhotoSelect(14512171,12,16);return false;" onclick='return false;' id='PHOTONAV_14512171_12' >12</a><a href='#' onmouseover="GenReport_PhotoSelect(14512171,13,16);return false;" onclick='return false;' id='PHOTONAV_14512171_13' >13</a><a href='#' onmouseover="GenReport_PhotoSelect(14512171,14,16);return false;" onclick='return false;' id='PHOTONAV_14512171_14' >14</a><a href='#' onmouseover="GenReport_PhotoSelect(14512171,15,16);return false;" onclick='return false;' id='PHOTONAV_14512171_15' >15</a><a href='#' onmouseover="GenReport_PhotoSelect(14512171,16,16);return false;" onclick='return false;' id='PHOTONAV_14512171_16' >16</a><a id='linkShowPhotoNext_14512171'  href='#' onclick="GenReport_PhotoSelect(14512171,'next',16);return false;" >&raquo;</a><br /><a id='linkPhotoViewer_14512171' class='PHOTO_NAV_HELP' href='#'  onclick="PhotoViewer('?CRPT2=IXgUGzBIMaXJcA3hXDltDNhxycXIhdSwPL3wAMh4CbHQlWhcgGVYqIxpBd1YzDSGpD41kIAOhUgPmJFnt5RwzDzDdgh');return false;">(Click the image to use the photo viewer)</a></div></td></tr></table></td><td valign='top'><!-- --><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:8%"  class='V2R_LB' >ML#:</td><td style="width:17%"  class='V2R_L' >14512171</td><td style="width:8%"  class='V2R_LB' >Area:</td><td style="width:10%"  class='V2R_L' >142</td><td style="width:10%"  class='V2R_LB' >Status:</td><td style="width:10%"  class='V2R_L' >ACT</td><td style="width:8%"  class='V2R_LB' >Price:</td><td style="width:20%"  class='V2R_L' >$389,990</td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:9%"  class='V2R_LB' >Address:</td><td style="width:34%"  class='V2R_L' >1211 NE 58th AVE <a id='linkMapLink_14512171' href="javascript:MGS_ShowMap_Ex('http%3A%2F%2Frmls%2Ee%2Dmapping%2Ecom%2Fgv5%2Fv5ajax%2Fptdv2%2Fgeojet5%2Easp%3Flat%3D45%2E531846%26lon%3D%2D122%2E60426%26address%3D1211+NE+58th+AVE%2C+Portland%2C+97213%26apn%3DR226078%26bdrms%3D3%26date%5Flist%3D2%2F21%2F2014%26Lot%2BSize%3D3K%252D4%252C999SF+%280%2E11%29%26price%3D%24389%2C990%26status%3DACT%26sqft%3D1904%26prop%5Ftype%3DDETACHD%26mls%5Fnumber%3D14512171%26baths%5Ftot%3D2%26ctyid%3D7%26prop%5Fcat%3DRES%26Photo%3Dhttp%3A%2F%2Fwww%2Ermlsweb%2Ecom%2FWEBPHOTOS%2F14500000%2F10000%2F2000%2F14512171%2D1%2Ejpg','GEOJET_BING');"  class='MAPLINK_ADDRESS_FULL' ><span class='BOXLINK BOXICON_M np' title='Map This Address'>&nbsp;M&nbsp;</span></a></td><td style="width:5%"  class='V2R_LB' >City:</td><td style="width:17%"  class='V2R_L' ><a id='linkUrlCity2' href='http://www.portlandonline.com/'  target='_blank' class='VIRTUALTOUR' title='City Web Site'>Portland</a></td><td style="width:6%"  class='V2R_LB' >Zip:</td><td style="width:5%"  class='V2R_L' >97213</td><td style="width:14%"  class='V2R_L' ></td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:10%"  class='V2R_LB' >XST/Dir:</td><td style="width:90%"  class='V2R_L' >Halsey&gt;South on 58th&gt;2 blocks down on West side of 58th</td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:14%"  class='V2R_LB' >Bed/Baths:</td><td style="width:9%"  class='V2R_L' >3/2</td><td style="width:8%"  class='V2R_LB' >SQFT:</td><td style="width:14%"  class='V2R_L' >1904</td><td style="width:10%"  class='V2R_LB' >YrBuilt:</td><td style="width:9%"  class='V2R_L' >1901</td><td style="width:8%"  class='V2R_LB' >Style:</td><td style="width:28%"  class='V2R_L' >BUNGALO</td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:15%"  class='V2R_LB' >Map Coord:</td><td style="width:11%"  class='V2R_L' >597/D/4</td><td style="width:8%"  class='V2R_LB' >Type:</td><td style="width:14%"  class='V2R_L' >DETACHD</td><td style="width:10%"  class='V2R_LB' >PTax/Yr:</td><td style="width:11%"  class='V2R_L' >$3,280.85</td><td style="width:10%"  class='V2R_LB' >LotSize:</td><td style="width:23%"  class='V2R_L' >3K-4,999SF</td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:6%"  class='V2R_LB' >View:</td><td style="width:37%"  class='V2R_L' ></td><td style="width:8%"  class='V2R_LB' >Garage:</td><td style="width:10%"  class='V2R_L' >0/</td><td style="width:8%"  class='V2R_LB' >Acres:</td><td style="width:15%"  class='V2R_L' >0.11</td></tr></table></td></tr></table></div><!-- Photo Block End --><!-- ================================================================================================== --></div><!-- REPORT_STDBOX --></td>
+<td width='20' class='np' valign='bottom'style='padding-left:3px;'><input type='checkbox' id='ItemCheckBox_14512171' name='MLID' value='14512171' class='np'onclick='GenReport_Check(this);'  /><span class='SPECIFIC_ORDER_LABEL' id='ORD_14512171'></span></td>
+</tr>
+<tr class='ROW'>
+
+<td><div class='REPORT_STDBOX'><!-- ================================================================================================== --><!-- RID=[ClientShort] PropType=[1] --><!-- Photo Block Begin --><div class='V2_REPORT_SUBREPORT'><table width='100%' border='0' cellpadding='0' cellspacing='0' class='V2_REPORT_PHOTOTABLE'><tr><td style="width:20%"><!--#PHOTO--><script type='text/javascript'>
+function SetPhotoCaptionData_LGC_CLSHORT_14439439(){
+photocaptions['photo14439439']={};
+photourls['photo14439439']="14400000/30000/9000/";
+photocaptions['photo14439439'][1]="";
+photocaptions['photo14439439'][2]="";
+photocaptions['photo14439439'][3]="";
+photocaptions['photo14439439'][4]="";
+photocaptions['photo14439439'][5]="";
+photocaptions['photo14439439'][6]="";
+photocaptions['photo14439439'][7]="";
+photocaptions['photo14439439'][8]="";
+photocaptions['photo14439439'][9]="";
+photocaptions['photo14439439'][10]="";
+photocaptions['photo14439439'][11]="";
+}
+SetPhotoCaptionData_LGC_CLSHORT_14439439();
+</script>
+<!-- bPhotoNavigation=True--><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_PHOTO_SMALL'><tr><td align='center' valign='top'><a href='#'  id='linkPhotoViewerMLN_14439439'  onclick="PhotoViewer('?CRPT2=IXgUGzBIMaXJdAXNSClNDNhxycXIhdSwPL3wAMh4CbHQlWhcgGVYqIxpBd1YzDkTHBEqZNMtgE6HZ33cZCzGAzDzDdgh');return false;" ><img src='/WEBPHOTOS/14400000/30000/9000/14439439-1.jpg?t=20140221211218' id='PHOTO_14439439' alt='MLS#14439439' class='PHOTO' /></a><div class='photocaption' id='photocaption_text_14439439'></div><div class='PHOTO_NAV np'><a id='linkShowPhotoPrev_14439439' href='#' onclick="GenReport_PhotoSelect(14439439,'prev',11);return false;" >&laquo;</a><a href='#' onmouseover="GenReport_PhotoSelect(14439439,1,11);return false;" onclick='return false;' id='PHOTONAV_14439439_1'  class='PHOTO_SELECTED' >1</a><a href='#' onmouseover="GenReport_PhotoSelect(14439439,2,11);return false;" onclick='return false;' id='PHOTONAV_14439439_2' >2</a><a href='#' onmouseover="GenReport_PhotoSelect(14439439,3,11);return false;" onclick='return false;' id='PHOTONAV_14439439_3' >3</a><a href='#' onmouseover="GenReport_PhotoSelect(14439439,4,11);return false;" onclick='return false;' id='PHOTONAV_14439439_4' >4</a><a href='#' onmouseover="GenReport_PhotoSelect(14439439,5,11);return false;" onclick='return false;' id='PHOTONAV_14439439_5' >5</a><a href='#' onmouseover="GenReport_PhotoSelect(14439439,6,11);return false;" onclick='return false;' id='PHOTONAV_14439439_6' >6</a><a href='#' onmouseover="GenReport_PhotoSelect(14439439,7,11);return false;" onclick='return false;' id='PHOTONAV_14439439_7' >7</a><a href='#' onmouseover="GenReport_PhotoSelect(14439439,8,11);return false;" onclick='return false;' id='PHOTONAV_14439439_8' >8</a><br /><a href='#' onmouseover="GenReport_PhotoSelect(14439439,9,11);return false;" onclick='return false;' id='PHOTONAV_14439439_9' >9</a><a href='#' onmouseover="GenReport_PhotoSelect(14439439,10,11);return false;" onclick='return false;' id='PHOTONAV_14439439_10' >10</a><a href='#' onmouseover="GenReport_PhotoSelect(14439439,11,11);return false;" onclick='return false;' id='PHOTONAV_14439439_11' >11</a><a id='linkShowPhotoNext_14439439'  href='#' onclick="GenReport_PhotoSelect(14439439,'next',11);return false;" >&raquo;</a><br /><a id='linkPhotoViewer_14439439' class='PHOTO_NAV_HELP' href='#'  onclick="PhotoViewer('?CRPT2=IXgUGzBIMaXJdAXNSClNDNhxycXIhdSwPL3wAMh4CbHQlWhcgGVYqIxpBd1YzDkTHBEqZNMtgE6HZ33cZCzGAzDzDdgh');return false;">(Click the image to use the photo viewer)</a></div></td></tr></table></td><td valign='top'><!-- --><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:8%"  class='V2R_LB' >ML#:</td><td style="width:17%"  class='V2R_L' >14439439</td><td style="width:8%"  class='V2R_LB' >Area:</td><td style="width:10%"  class='V2R_L' >142</td><td style="width:10%"  class='V2R_LB' >Status:</td><td style="width:10%"  class='V2R_L' >ACT</td><td style="width:8%"  class='V2R_LB' >Price:</td><td style="width:20%"  class='V2R_L' >$390,000</td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:9%"  class='V2R_LB' >Address:</td><td style="width:34%"  class='V2R_L' >3945 NE 9TH AVE <a id='linkMapLink_14439439' href="javascript:MGS_ShowMap_Ex('http%3A%2F%2Frmls%2Ee%2Dmapping%2Ecom%2Fgv5%2Fv5ajax%2Fptdv2%2Fgeojet5%2Easp%3Flat%3D45%2E551495%26lon%3D%2D122%2E656895%26address%3D3945+NE+9TH+AVE%2C+Portland%2C+97212%26apn%3DR226565%26bdrms%3D4%26date%5Flist%3D2%2F21%2F2014%26Lot%2BSize%3D5K%252D6%252C999SF+%280%2E11%29%26price%3D%24390%2C000%26status%3DACT%26sqft%3D1548%26prop%5Ftype%3DDETACHD%26mls%5Fnumber%3D14439439%26baths%5Ftot%3D1%2E1%26ctyid%3D7%26prop%5Fcat%3DRES%26Photo%3Dhttp%3A%2F%2Fwww%2Ermlsweb%2Ecom%2FWEBPHOTOS%2F14400000%2F30000%2F9000%2F14439439%2D1%2Ejpg','GEOJET_BING');"  class='MAPLINK_ADDRESS_FULL' ><span class='BOXLINK BOXICON_M np' title='Map This Address'>&nbsp;M&nbsp;</span></a></td><td style="width:5%"  class='V2R_LB' >City:</td><td style="width:17%"  class='V2R_L' ><a id='linkUrlCity3' href='http://www.portlandonline.com/'  target='_blank' class='VIRTUALTOUR' title='City Web Site'>Portland</a></td><td style="width:6%"  class='V2R_LB' >Zip:</td><td style="width:5%"  class='V2R_L' >97212</td><td style="width:14%"  class='V2R_L' ></td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:10%"  class='V2R_LB' >XST/Dir:</td><td style="width:90%"  class='V2R_L' >3 blocks north of Fremont between NE Failing &amp; NE Shaver</td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:14%"  class='V2R_LB' >Bed/Baths:</td><td style="width:9%"  class='V2R_L' >4/1.1</td><td style="width:8%"  class='V2R_LB' >SQFT:</td><td style="width:14%"  class='V2R_L' >1548</td><td style="width:10%"  class='V2R_LB' >YrBuilt:</td><td style="width:9%"  class='V2R_L' >1995</td><td style="width:8%"  class='V2R_LB' >Style:</td><td style="width:28%"  class='V2R_L' >CRAFTSM, CONTEMP</td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:15%"  class='V2R_LB' >Map Coord:</td><td style="width:11%"  class='V2R_L' >596/H/1</td><td style="width:8%"  class='V2R_LB' >Type:</td><td style="width:14%"  class='V2R_L' >DETACHD</td><td style="width:10%"  class='V2R_LB' >PTax/Yr:</td><td style="width:11%"  class='V2R_L' >$3,211.44</td><td style="width:10%"  class='V2R_LB' >LotSize:</td><td style="width:23%"  class='V2R_L' >5K-6,999SF</td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:6%"  class='V2R_LB' >View:</td><td style="width:37%"  class='V2R_L' ></td><td style="width:8%"  class='V2R_LB' >Garage:</td><td style="width:10%"  class='V2R_L' >1/ATTACHD</td><td style="width:8%"  class='V2R_LB' >Acres:</td><td style="width:15%"  class='V2R_L' >0.11</td></tr></table></td></tr></table></div><!-- Photo Block End --><!-- ================================================================================================== --></div><!-- REPORT_STDBOX --></td>
+<td width='20' class='np' valign='bottom'style='padding-left:3px;'><input type='checkbox' id='ItemCheckBox_14439439' name='MLID' value='14439439' class='np'onclick='GenReport_Check(this);'  /><span class='SPECIFIC_ORDER_LABEL' id='ORD_14439439'></span></td>
+</tr>
+<tr class='ROW'>
+
+<td><div class='REPORT_STDBOX'><!-- ================================================================================================== --><!-- RID=[ClientShort] PropType=[1] --><!-- Photo Block Begin --><div class='V2_REPORT_SUBREPORT'><table width='100%' border='0' cellpadding='0' cellspacing='0' class='V2_REPORT_PHOTOTABLE'><tr><td style="width:20%"><!--#PHOTO--><script type='text/javascript'>
+function SetPhotoCaptionData_LGC_CLSHORT_14557485(){
+photocaptions['photo14557485']={};
+photourls['photo14557485']="14500000/50000/7000/";
+photocaptions['photo14557485'][1]="";
+photocaptions['photo14557485'][2]="";
+photocaptions['photo14557485'][3]="";
+photocaptions['photo14557485'][4]="";
+photocaptions['photo14557485'][5]="";
+photocaptions['photo14557485'][6]="";
+photocaptions['photo14557485'][7]="";
+photocaptions['photo14557485'][8]="";
+photocaptions['photo14557485'][9]="";
+photocaptions['photo14557485'][10]="";
+photocaptions['photo14557485'][11]="";
+photocaptions['photo14557485'][12]="";
+photocaptions['photo14557485'][13]="";
+}
+SetPhotoCaptionData_LGC_CLSHORT_14557485();
+</script>
+<!-- bPhotoNavigation=True--><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_PHOTO_SMALL'><tr><td align='center' valign='top'><a href='#'  id='linkPhotoViewerMLN_14557485'  onclick="PhotoViewer('?CRPT2=IXgUGzBIMaXJcB31SAV9DNhxycXIhdSwPL3wAMh4CbHQlWhcgGVYqIxpBd1YzDni0AC8QawOmE9ezCpzBskVzGgzDzDdgh');return false;" ><img src='/WEBPHOTOS/14500000/50000/7000/14557485-1.jpg?t=20140221211218' id='PHOTO_14557485' alt='MLS#14557485' class='PHOTO' /></a><div class='photocaption' id='photocaption_text_14557485'></div><div class='PHOTO_NAV np'><a id='linkShowPhotoPrev_14557485' href='#' onclick="GenReport_PhotoSelect(14557485,'prev',13);return false;" >&laquo;</a><a href='#' onmouseover="GenReport_PhotoSelect(14557485,1,13);return false;" onclick='return false;' id='PHOTONAV_14557485_1'  class='PHOTO_SELECTED' >1</a><a href='#' onmouseover="GenReport_PhotoSelect(14557485,2,13);return false;" onclick='return false;' id='PHOTONAV_14557485_2' >2</a><a href='#' onmouseover="GenReport_PhotoSelect(14557485,3,13);return false;" onclick='return false;' id='PHOTONAV_14557485_3' >3</a><a href='#' onmouseover="GenReport_PhotoSelect(14557485,4,13);return false;" onclick='return false;' id='PHOTONAV_14557485_4' >4</a><a href='#' onmouseover="GenReport_PhotoSelect(14557485,5,13);return false;" onclick='return false;' id='PHOTONAV_14557485_5' >5</a><a href='#' onmouseover="GenReport_PhotoSelect(14557485,6,13);return false;" onclick='return false;' id='PHOTONAV_14557485_6' >6</a><a href='#' onmouseover="GenReport_PhotoSelect(14557485,7,13);return false;" onclick='return false;' id='PHOTONAV_14557485_7' >7</a><a href='#' onmouseover="GenReport_PhotoSelect(14557485,8,13);return false;" onclick='return false;' id='PHOTONAV_14557485_8' >8</a><br /><a href='#' onmouseover="GenReport_PhotoSelect(14557485,9,13);return false;" onclick='return false;' id='PHOTONAV_14557485_9' >9</a><a href='#' onmouseover="GenReport_PhotoSelect(14557485,10,13);return false;" onclick='return false;' id='PHOTONAV_14557485_10' >10</a><a href='#' onmouseover="GenReport_PhotoSelect(14557485,11,13);return false;" onclick='return false;' id='PHOTONAV_14557485_11' >11</a><a href='#' onmouseover="GenReport_PhotoSelect(14557485,12,13);return false;" onclick='return false;' id='PHOTONAV_14557485_12' >12</a><a href='#' onmouseover="GenReport_PhotoSelect(14557485,13,13);return false;" onclick='return false;' id='PHOTONAV_14557485_13' >13</a><a id='linkShowPhotoNext_14557485'  href='#' onclick="GenReport_PhotoSelect(14557485,'next',13);return false;" >&raquo;</a><br /><a id='linkPhotoViewer_14557485' class='PHOTO_NAV_HELP' href='#'  onclick="PhotoViewer('?CRPT2=IXgUGzBIMaXJcB31SAV9DNhxycXIhdSwPL3wAMh4CbHQlWhcgGVYqIxpBd1YzDni0AC8QawOmE9ezCpzBskVzGgzDzDdgh');return false;">(Click the image to use the photo viewer)</a></div></td></tr></table></td><td valign='top'><!-- --><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:8%"  class='V2R_LB' >ML#:</td><td style="width:17%"  class='V2R_L' >14557485</td><td style="width:8%"  class='V2R_LB' >Area:</td><td style="width:10%"  class='V2R_L' >142</td><td style="width:10%"  class='V2R_LB' >Status:</td><td style="width:10%"  class='V2R_L' >ACT</td><td style="width:8%"  class='V2R_LB' >Price:</td><td style="width:20%"  class='V2R_L' >$599,000</td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:9%"  class='V2R_LB' >Address:</td><td style="width:34%"  class='V2R_L' >806 NE KNOTT ST <a id='linkMapLink_14557485' href="javascript:MGS_ShowMap_Ex('http%3A%2F%2Frmls%2Ee%2Dmapping%2Ecom%2Fgv5%2Fv5ajax%2Fptdv2%2Fgeojet5%2Easp%3Flat%3D45%2E541933%26lon%3D%2D122%2E657171%26address%3D806+NE+KNOTT+ST%2C+Portland%2C+97212%26apn%3DR189222%26bdrms%3D3%26date%5Flist%3D2%2F13%2F2014%26Lot%2BSize%3D3K%252D4%252C999SF+%280%2E11%29%26price%3D%24599%2C000%26status%3DACT%26sqft%3D2462%26prop%5Ftype%3DDETACHD%26mls%5Fnumber%3D14557485%26baths%5Ftot%3D2%2E1%26ctyid%3D7%26prop%5Fcat%3DRES%26Photo%3Dhttp%3A%2F%2Fwww%2Ermlsweb%2Ecom%2FWEBPHOTOS%2F14500000%2F50000%2F7000%2F14557485%2D1%2Ejpg','GEOJET_BING');"  class='MAPLINK_ADDRESS_FULL' ><span class='BOXLINK BOXICON_M np' title='Map This Address'>&nbsp;M&nbsp;</span></a></td><td style="width:5%"  class='V2R_LB' >City:</td><td style="width:17%"  class='V2R_L' ><a id='linkUrlCity4' href='http://www.portlandonline.com/'  target='_blank' class='VIRTUALTOUR' title='City Web Site'>Portland</a></td><td style="width:6%"  class='V2R_LB' >Zip:</td><td style="width:5%"  class='V2R_L' >97212</td><td style="width:14%"  class='V2R_L' ></td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:10%"  class='V2R_LB' >XST/Dir:</td><td style="width:90%"  class='V2R_L' >Knott to NE 8th AVE</td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:14%"  class='V2R_LB' >Bed/Baths:</td><td style="width:9%"  class='V2R_L' >3/2.1</td><td style="width:8%"  class='V2R_LB' >SQFT:</td><td style="width:14%"  class='V2R_L' >2462</td><td style="width:10%"  class='V2R_LB' >YrBuilt:</td><td style="width:9%"  class='V2R_L' >1927</td><td style="width:8%"  class='V2R_LB' >Style:</td><td style="width:28%"  class='V2R_L' >TUDOR, ENGLISH</td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:15%"  class='V2R_LB' >Map Coord:</td><td style="width:11%"  class='V2R_L' ></td><td style="width:8%"  class='V2R_LB' >Type:</td><td style="width:14%"  class='V2R_L' >DETACHD</td><td style="width:10%"  class='V2R_LB' >PTax/Yr:</td><td style="width:11%"  class='V2R_L' >$4,142.12</td><td style="width:10%"  class='V2R_LB' >LotSize:</td><td style="width:23%"  class='V2R_L' >3K-4,999SF</td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:6%"  class='V2R_LB' >View:</td><td style="width:37%"  class='V2R_L' ></td><td style="width:8%"  class='V2R_LB' >Garage:</td><td style="width:10%"  class='V2R_L' >1/</td><td style="width:8%"  class='V2R_LB' >Acres:</td><td style="width:15%"  class='V2R_L' >0.11</td></tr></table></td></tr></table></div><!-- Photo Block End --><!-- ================================================================================================== --></div><!-- REPORT_STDBOX --></td>
+<td width='20' class='np' valign='bottom'style='padding-left:3px;'><input type='checkbox' id='ItemCheckBox_14557485' name='MLID' value='14557485' class='np'onclick='GenReport_Check(this);'  /><span class='SPECIFIC_ORDER_LABEL' id='ORD_14557485'></span></td>
+</tr>
+<tr class='ROW'>
+
+<td><div class='REPORT_STDBOX'><!-- ================================================================================================== --><!-- RID=[ClientShort] PropType=[1] --><!-- Photo Block Begin --><div class='V2_REPORT_SUBREPORT'><table width='100%' border='0' cellpadding='0' cellspacing='0' class='V2_REPORT_PHOTOTABLE'><tr><td style="width:20%"><!--#PHOTO--><script type='text/javascript'>
+function SetPhotoCaptionData_LGC_CLSHORT_13495893(){
+photocaptions['photo13495893']={};
+photourls['photo13495893']="13400000/90000/5000/";
+photocaptions['photo13495893'][1]="";
+photocaptions['photo13495893'][2]="";
+photocaptions['photo13495893'][3]="";
+photocaptions['photo13495893'][4]="";
+photocaptions['photo13495893'][5]="";
+photocaptions['photo13495893'][6]="";
+photocaptions['photo13495893'][7]="";
+photocaptions['photo13495893'][8]="";
+photocaptions['photo13495893'][9]="";
+photocaptions['photo13495893'][10]="";
+photocaptions['photo13495893'][11]="";
+photocaptions['photo13495893'][12]="";
+photocaptions['photo13495893'][13]="";
+photocaptions['photo13495893'][14]="";
+photocaptions['photo13495893'][15]="";
+photocaptions['photo13495893'][16]="";
+}
+SetPhotoCaptionData_LGC_CLSHORT_13495893();
+</script>
+<!-- bPhotoNavigation=True--><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_PHOTO_SMALL'><tr><td align='center' valign='top'><a href='#'  id='linkPhotoViewerMLN_13495893'  onclick="PhotoViewer('?CRPT2=IXgUGzBIMaXVdC39eAFlDNhxycXIhdSwPL3wAMh4CbHQlWhcgGVYqIxpBd1YzDtq6MZcZ7koI5gVCMt3TtCwzDzDdgh');return false;" ><img src='/WEBPHOTOS/13400000/90000/5000/13495893-1.jpg?t=20140221211219' id='PHOTO_13495893' alt='MLS#13495893' class='PHOTO' /></a><div class='photocaption' id='photocaption_text_13495893'></div><div class='PHOTO_NAV np'><a id='linkShowPhotoPrev_13495893' href='#' onclick="GenReport_PhotoSelect(13495893,'prev',16);return false;" >&laquo;</a><a href='#' onmouseover="GenReport_PhotoSelect(13495893,1,16);return false;" onclick='return false;' id='PHOTONAV_13495893_1'  class='PHOTO_SELECTED' >1</a><a href='#' onmouseover="GenReport_PhotoSelect(13495893,2,16);return false;" onclick='return false;' id='PHOTONAV_13495893_2' >2</a><a href='#' onmouseover="GenReport_PhotoSelect(13495893,3,16);return false;" onclick='return false;' id='PHOTONAV_13495893_3' >3</a><a href='#' onmouseover="GenReport_PhotoSelect(13495893,4,16);return false;" onclick='return false;' id='PHOTONAV_13495893_4' >4</a><a href='#' onmouseover="GenReport_PhotoSelect(13495893,5,16);return false;" onclick='return false;' id='PHOTONAV_13495893_5' >5</a><a href='#' onmouseover="GenReport_PhotoSelect(13495893,6,16);return false;" onclick='return false;' id='PHOTONAV_13495893_6' >6</a><a href='#' onmouseover="GenReport_PhotoSelect(13495893,7,16);return false;" onclick='return false;' id='PHOTONAV_13495893_7' >7</a><a href='#' onmouseover="GenReport_PhotoSelect(13495893,8,16);return false;" onclick='return false;' id='PHOTONAV_13495893_8' >8</a><br /><a href='#' onmouseover="GenReport_PhotoSelect(13495893,9,16);return false;" onclick='return false;' id='PHOTONAV_13495893_9' >9</a><a href='#' onmouseover="GenReport_PhotoSelect(13495893,10,16);return false;" onclick='return false;' id='PHOTONAV_13495893_10' >10</a><a href='#' onmouseover="GenReport_PhotoSelect(13495893,11,16);return false;" onclick='return false;' id='PHOTONAV_13495893_11' >11</a><a href='#' onmouseover="GenReport_PhotoSelect(13495893,12,16);return false;" onclick='return false;' id='PHOTONAV_13495893_12' >12</a><a href='#' onmouseover="GenReport_PhotoSelect(13495893,13,16);return false;" onclick='return false;' id='PHOTONAV_13495893_13' >13</a><a href='#' onmouseover="GenReport_PhotoSelect(13495893,14,16);return false;" onclick='return false;' id='PHOTONAV_13495893_14' >14</a><a href='#' onmouseover="GenReport_PhotoSelect(13495893,15,16);return false;" onclick='return false;' id='PHOTONAV_13495893_15' >15</a><a href='#' onmouseover="GenReport_PhotoSelect(13495893,16,16);return false;" onclick='return false;' id='PHOTONAV_13495893_16' >16</a><a id='linkShowPhotoNext_13495893'  href='#' onclick="GenReport_PhotoSelect(13495893,'next',16);return false;" >&raquo;</a><br /><a id='linkPhotoViewer_13495893' class='PHOTO_NAV_HELP' href='#'  onclick="PhotoViewer('?CRPT2=IXgUGzBIMaXVdC39eAFlDNhxycXIhdSwPL3wAMh4CbHQlWhcgGVYqIxpBd1YzDtq6MZcZ7koI5gVCMt3TtCwzDzDdgh');return false;">(Click the image to use the photo viewer)</a></div></td></tr></table></td><td valign='top'><!-- --><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:8%"  class='V2R_LB' >ML#:</td><td style="width:17%"  class='V2R_L' >13495893</td><td style="width:8%"  class='V2R_LB' >Area:</td><td style="width:10%"  class='V2R_L' >143</td><td style="width:10%"  class='V2R_LB' >Status:</td><td style="width:10%"  class='V2R_L' >ACT</td><td style="width:8%"  class='V2R_LB' >Price:</td><td style="width:20%"  class='V2R_L' >$324,500</td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:9%"  class='V2R_LB' >Address:</td><td style="width:34%"  class='V2R_L' >8126 SE TAYLOR ST <a id='linkMapLink_13495893' href="javascript:MGS_ShowMap_Ex('http%3A%2F%2Frmls%2Ee%2Dmapping%2Ecom%2Fgv5%2Fv5ajax%2Fptdv2%2Fgeojet5%2Easp%3Flat%3D45%2E51532%26lon%3D%2D122%2E579567%26address%3D8126+SE+TAYLOR+ST%2C+Portland%2C+97215%26apn%3DR277470%26bdrms%3D4%26date%5Flist%3D10%2F11%2F2013%26Lot%2BSize%3D3K%252D4%252C999SF%26price%3D%24324%2C500%26status%3DACT%26sqft%3D1854%26prop%5Ftype%3DDETACHD%26mls%5Fnumber%3D13495893%26baths%5Ftot%3D3%26ctyid%3D7%26prop%5Fcat%3DRES%26Photo%3Dhttp%3A%2F%2Fwww%2Ermlsweb%2Ecom%2FWEBPHOTOS%2F13400000%2F90000%2F5000%2F13495893%2D1%2Ejpg','GEOJET_BING');"  class='MAPLINK_ADDRESS_FULL' ><span class='BOXLINK BOXICON_M np' title='Map This Address'>&nbsp;M&nbsp;</span></a></td><td style="width:5%"  class='V2R_LB' >City:</td><td style="width:17%"  class='V2R_L' ><a id='linkUrlCity5' href='http://www.portlandonline.com/'  target='_blank' class='VIRTUALTOUR' title='City Web Site'>Portland</a></td><td style="width:6%"  class='V2R_LB' >Zip:</td><td style="width:5%"  class='V2R_L' >97215</td><td style="width:14%"  class='V2R_L' ></td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:10%"  class='V2R_LB' >XST/Dir:</td><td style="width:90%"  class='V2R_L' >82nd to Taylor St West to Property</td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:14%"  class='V2R_LB' >Bed/Baths:</td><td style="width:9%"  class='V2R_L' >4/3</td><td style="width:8%"  class='V2R_LB' >SQFT:</td><td style="width:14%"  class='V2R_L' >1854</td><td style="width:10%"  class='V2R_LB' >YrBuilt:</td><td style="width:9%"  class='V2R_L' >2013</td><td style="width:8%"  class='V2R_LB' >Style:</td><td style="width:28%"  class='V2R_L' >CRAFTSM</td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:15%"  class='V2R_LB' >Map Coord:</td><td style="width:11%"  class='V2R_L' >597/F/7</td><td style="width:8%"  class='V2R_LB' >Type:</td><td style="width:14%"  class='V2R_L' >DETACHD</td><td style="width:10%"  class='V2R_LB' >PTax/Yr:</td><td style="width:11%"  class='V2R_L' >$1,856.97</td><td style="width:10%"  class='V2R_LB' >LotSize:</td><td style="width:23%"  class='V2R_L' >3K-4,999SF</td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:6%"  class='V2R_LB' >View:</td><td style="width:37%"  class='V2R_L' ></td><td style="width:8%"  class='V2R_LB' >Garage:</td><td style="width:10%"  class='V2R_L' >1/ATTACHD</td><td style="width:8%"  class='V2R_LB' >Acres:</td><td style="width:15%"  class='V2R_L' ></td></tr></table></td></tr></table></div><!-- Photo Block End --><!-- ================================================================================================== --></div><!-- REPORT_STDBOX --></td>
+<td width='20' class='np' valign='bottom'style='padding-left:3px;'><input type='checkbox' id='ItemCheckBox_13495893' name='MLID' value='13495893' class='np'onclick='GenReport_Check(this);'  /><span class='SPECIFIC_ORDER_LABEL' id='ORD_13495893'></span></td>
+</tr>
+<tr class='np'><td colspan='2' style='height:30px;' align='center'>
+<a id='linkGoToTopOfPage_1' class='LINK_STD' href='#PAGE_TOP'><img src='/v2/images/icons/gotop.gif' alt='Go to the top of the page' border='0' />Top</a>
+ 
+<a id='linkGoToBottomOfPage_1' class='LINK_STD' href='#PAGE_BOTTOM'><img src='/v2/images/icons/gobottom.gif' alt='Go to the bottom of the page' border='0' />Bottom</a>
+</td></tr>
+</table>
+<div class='p 7724' style='page-break-after:always;' >
+<br style="height:0; line-height:0" />
+</div>
+
+<table border='0' cellspacing='0' cellpadding='0' class='REPORT_TABLE' width='100%'>
+<tr class='ROW'>
+
+<td><div class='REPORT_STDBOX'><!-- ================================================================================================== --><!-- RID=[ClientShort] PropType=[1] --><!-- Photo Block Begin --><div class='V2_REPORT_SUBREPORT'><table width='100%' border='0' cellpadding='0' cellspacing='0' class='V2_REPORT_PHOTOTABLE'><tr><td style="width:20%"><!--#PHOTO--><script type='text/javascript'>
+function SetPhotoCaptionData_LGC_CLSHORT_14165317(){
+photocaptions['photo14165317']={};
+photourls['photo14165317']="14100000/60000/5000/";
+photocaptions['photo14165317'][1]="";
+photocaptions['photo14165317'][2]="";
+photocaptions['photo14165317'][3]="";
+photocaptions['photo14165317'][4]="";
+photocaptions['photo14165317'][5]="";
+photocaptions['photo14165317'][6]="";
+photocaptions['photo14165317'][7]="";
+photocaptions['photo14165317'][8]="";
+photocaptions['photo14165317'][9]="";
+photocaptions['photo14165317'][10]="";
+photocaptions['photo14165317'][11]="";
+photocaptions['photo14165317'][12]="";
+photocaptions['photo14165317'][13]="";
+photocaptions['photo14165317'][14]="";
+photocaptions['photo14165317'][15]="";
+}
+SetPhotoCaptionData_LGC_CLSHORT_14165317();
+</script>
+<!-- bPhotoNavigation=True--><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_PHOTO_SMALL'><tr><td align='center' valign='top'><a href='#'  id='linkPhotoViewerMLN_14165317'  onclick="PhotoViewer('?CRPT2=IXgUGzBIMaXJYBH9VCF1DNhxycXIhdSwPL3wAMh4CbHQlWhcgGVYqIxpBd1YzDL5GfVnzBGzGmMsZdf0OXJOIQzDzDdgh');return false;" ><img src='/WEBPHOTOS/14100000/60000/5000/14165317-1.jpg?t=20140221211219' id='PHOTO_14165317' alt='MLS#14165317' class='PHOTO' /></a><div class='photocaption' id='photocaption_text_14165317'></div><div class='PHOTO_NAV np'><a id='linkShowPhotoPrev_14165317' href='#' onclick="GenReport_PhotoSelect(14165317,'prev',15);return false;" >&laquo;</a><a href='#' onmouseover="GenReport_PhotoSelect(14165317,1,15);return false;" onclick='return false;' id='PHOTONAV_14165317_1'  class='PHOTO_SELECTED' >1</a><a href='#' onmouseover="GenReport_PhotoSelect(14165317,2,15);return false;" onclick='return false;' id='PHOTONAV_14165317_2' >2</a><a href='#' onmouseover="GenReport_PhotoSelect(14165317,3,15);return false;" onclick='return false;' id='PHOTONAV_14165317_3' >3</a><a href='#' onmouseover="GenReport_PhotoSelect(14165317,4,15);return false;" onclick='return false;' id='PHOTONAV_14165317_4' >4</a><a href='#' onmouseover="GenReport_PhotoSelect(14165317,5,15);return false;" onclick='return false;' id='PHOTONAV_14165317_5' >5</a><a href='#' onmouseover="GenReport_PhotoSelect(14165317,6,15);return false;" onclick='return false;' id='PHOTONAV_14165317_6' >6</a><a href='#' onmouseover="GenReport_PhotoSelect(14165317,7,15);return false;" onclick='return false;' id='PHOTONAV_14165317_7' >7</a><a href='#' onmouseover="GenReport_PhotoSelect(14165317,8,15);return false;" onclick='return false;' id='PHOTONAV_14165317_8' >8</a><br /><a href='#' onmouseover="GenReport_PhotoSelect(14165317,9,15);return false;" onclick='return false;' id='PHOTONAV_14165317_9' >9</a><a href='#' onmouseover="GenReport_PhotoSelect(14165317,10,15);return false;" onclick='return false;' id='PHOTONAV_14165317_10' >10</a><a href='#' onmouseover="GenReport_PhotoSelect(14165317,11,15);return false;" onclick='return false;' id='PHOTONAV_14165317_11' >11</a><a href='#' onmouseover="GenReport_PhotoSelect(14165317,12,15);return false;" onclick='return false;' id='PHOTONAV_14165317_12' >12</a><a href='#' onmouseover="GenReport_PhotoSelect(14165317,13,15);return false;" onclick='return false;' id='PHOTONAV_14165317_13' >13</a><a href='#' onmouseover="GenReport_PhotoSelect(14165317,14,15);return false;" onclick='return false;' id='PHOTONAV_14165317_14' >14</a><a href='#' onmouseover="GenReport_PhotoSelect(14165317,15,15);return false;" onclick='return false;' id='PHOTONAV_14165317_15' >15</a><a id='linkShowPhotoNext_14165317'  href='#' onclick="GenReport_PhotoSelect(14165317,'next',15);return false;" >&raquo;</a><br /><a id='linkPhotoViewer_14165317' class='PHOTO_NAV_HELP' href='#'  onclick="PhotoViewer('?CRPT2=IXgUGzBIMaXJYBH9VCF1DNhxycXIhdSwPL3wAMh4CbHQlWhcgGVYqIxpBd1YzDL5GfVnzBGzGmMsZdf0OXJOIQzDzDdgh');return false;">(Click the image to use the photo viewer)</a></div></td></tr></table></td><td valign='top'><!-- --><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:8%"  class='V2R_LB' >ML#:</td><td style="width:17%"  class='V2R_L' >14165317</td><td style="width:8%"  class='V2R_LB' >Area:</td><td style="width:10%"  class='V2R_L' >143</td><td style="width:10%"  class='V2R_LB' >Status:</td><td style="width:10%"  class='V2R_L' >ACT</td><td style="width:8%"  class='V2R_LB' >Price:</td><td style="width:20%"  class='V2R_L' >$429,000</td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:9%"  class='V2R_LB' >Address:</td><td style="width:34%"  class='V2R_L' >6950 SE ASH ST <a id='linkMapLink_14165317' href="javascript:MGS_ShowMap_Ex('http%3A%2F%2Frmls%2Ee%2Dmapping%2Ecom%2Fgv5%2Fv5ajax%2Fptdv2%2Fgeojet5%2Easp%3Flat%3D45%2E520931%26lon%3D%2D122%2E59121%26address%3D6950+SE+ASH+ST%2C+Portland%2C+97215%26apn%3DR221127%26bdrms%3D3%26date%5Flist%3D2%2F18%2F2014%26Lot%2BSize%3D7K%252D9%252C999SF+%280%2E21%29%26price%3D%24429%2C000%26status%3DACT%26sqft%3D2052%26prop%5Ftype%3DDETACHD%26mls%5Fnumber%3D14165317%26baths%5Ftot%3D3%26ctyid%3D7%26prop%5Fcat%3DRES%26Photo%3Dhttp%3A%2F%2Fwww%2Ermlsweb%2Ecom%2FWEBPHOTOS%2F14100000%2F60000%2F5000%2F14165317%2D1%2Ejpg','GEOJET_BING');"  class='MAPLINK_ADDRESS_FULL' ><span class='BOXLINK BOXICON_M np' title='Map This Address'>&nbsp;M&nbsp;</span></a></td><td style="width:5%"  class='V2R_LB' >City:</td><td style="width:17%"  class='V2R_L' ><a id='linkUrlCity6' href='http://www.portlandonline.com/'  target='_blank' class='VIRTUALTOUR' title='City Web Site'>Portland</a></td><td style="width:6%"  class='V2R_LB' >Zip:</td><td style="width:5%"  class='V2R_L' >97215</td><td style="width:14%"  class='V2R_L' ></td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:10%"  class='V2R_LB' >XST/Dir:</td><td style="width:90%"  class='V2R_L' >Burnside, S on Gilham. Corner of Gilham &amp; Ash</td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:14%"  class='V2R_LB' >Bed/Baths:</td><td style="width:9%"  class='V2R_L' >3/3</td><td style="width:8%"  class='V2R_LB' >SQFT:</td><td style="width:14%"  class='V2R_L' >2052</td><td style="width:10%"  class='V2R_LB' >YrBuilt:</td><td style="width:9%"  class='V2R_L' >1961</td><td style="width:8%"  class='V2R_LB' >Style:</td><td style="width:28%"  class='V2R_L' >CONTEMP</td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:15%"  class='V2R_LB' >Map Coord:</td><td style="width:11%"  class='V2R_L' >597/E/6</td><td style="width:8%"  class='V2R_LB' >Type:</td><td style="width:14%"  class='V2R_L' >DETACHD</td><td style="width:10%"  class='V2R_LB' >PTax/Yr:</td><td style="width:11%"  class='V2R_L' >$4,718.19</td><td style="width:10%"  class='V2R_LB' >LotSize:</td><td style="width:23%"  class='V2R_L' >7K-9,999SF</td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:6%"  class='V2R_LB' >View:</td><td style="width:37%"  class='V2R_L' >CITY, MNTAIN, VALLEY</td><td style="width:8%"  class='V2R_LB' >Garage:</td><td style="width:10%"  class='V2R_L' >2/ATTACHD</td><td style="width:8%"  class='V2R_LB' >Acres:</td><td style="width:15%"  class='V2R_L' >0.21</td></tr></table></td></tr></table></div><!-- Photo Block End --><!-- ================================================================================================== --></div><!-- REPORT_STDBOX --></td>
+<td width='20' class='np' valign='bottom'style='padding-left:3px;'><input type='checkbox' id='ItemCheckBox_14165317' name='MLID' value='14165317' class='np'onclick='GenReport_Check(this);'  /><span class='SPECIFIC_ORDER_LABEL' id='ORD_14165317'></span></td>
+</tr>
+<tr class='ROW'>
+
+<td><div class='REPORT_STDBOX'><!-- ================================================================================================== --><!-- RID=[ClientShort] PropType=[1] --><!-- Photo Block Begin --><div class='V2_REPORT_SUBREPORT'><table width='100%' border='0' cellpadding='0' cellspacing='0' class='V2_REPORT_PHOTOTABLE'><tr><td style="width:20%"><!--#PHOTO--><script type='text/javascript'>
+function SetPhotoCaptionData_LGC_CLSHORT_14452164(){
+photocaptions['photo14452164']={};
+photourls['photo14452164']="14400000/50000/2000/";
+photocaptions['photo14452164'][1]="";
+photocaptions['photo14452164'][2]="";
+photocaptions['photo14452164'][3]="";
+photocaptions['photo14452164'][4]="";
+photocaptions['photo14452164'][5]="";
+photocaptions['photo14452164'][6]="";
+photocaptions['photo14452164'][7]="";
+photocaptions['photo14452164'][8]="";
+photocaptions['photo14452164'][9]="";
+photocaptions['photo14452164'][10]="";
+photocaptions['photo14452164'][11]="";
+photocaptions['photo14452164'][12]="";
+photocaptions['photo14452164'][13]="";
+photocaptions['photo14452164'][14]="";
+photocaptions['photo14452164'][15]="";
+photocaptions['photo14452164'][16]="";
+}
+SetPhotoCaptionData_LGC_CLSHORT_14452164();
+</script>
+<!-- bPhotoNavigation=True--><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_PHOTO_SMALL'><tr><td align='center' valign='top'><a href='#'  id='linkPhotoViewerMLN_14452164'  onclick="PhotoViewer('?CRPT2=IXgUGzBIMaXJdB3hXD15DNhxycXIhdSwPL3wAMh4CbHQlWhcgGVYqIxpBd1YzDw3ZhWf8j8BgQqCMDwezCvXwzDzDdgh');return false;" ><img src='/WEBPHOTOS/14400000/50000/2000/14452164-1.jpg?t=20140221211219' id='PHOTO_14452164' alt='MLS#14452164' class='PHOTO' /></a><div class='photocaption' id='photocaption_text_14452164'></div><div class='PHOTO_NAV np'><a id='linkShowPhotoPrev_14452164' href='#' onclick="GenReport_PhotoSelect(14452164,'prev',16);return false;" >&laquo;</a><a href='#' onmouseover="GenReport_PhotoSelect(14452164,1,16);return false;" onclick='return false;' id='PHOTONAV_14452164_1'  class='PHOTO_SELECTED' >1</a><a href='#' onmouseover="GenReport_PhotoSelect(14452164,2,16);return false;" onclick='return false;' id='PHOTONAV_14452164_2' >2</a><a href='#' onmouseover="GenReport_PhotoSelect(14452164,3,16);return false;" onclick='return false;' id='PHOTONAV_14452164_3' >3</a><a href='#' onmouseover="GenReport_PhotoSelect(14452164,4,16);return false;" onclick='return false;' id='PHOTONAV_14452164_4' >4</a><a href='#' onmouseover="GenReport_PhotoSelect(14452164,5,16);return false;" onclick='return false;' id='PHOTONAV_14452164_5' >5</a><a href='#' onmouseover="GenReport_PhotoSelect(14452164,6,16);return false;" onclick='return false;' id='PHOTONAV_14452164_6' >6</a><a href='#' onmouseover="GenReport_PhotoSelect(14452164,7,16);return false;" onclick='return false;' id='PHOTONAV_14452164_7' >7</a><a href='#' onmouseover="GenReport_PhotoSelect(14452164,8,16);return false;" onclick='return false;' id='PHOTONAV_14452164_8' >8</a><br /><a href='#' onmouseover="GenReport_PhotoSelect(14452164,9,16);return false;" onclick='return false;' id='PHOTONAV_14452164_9' >9</a><a href='#' onmouseover="GenReport_PhotoSelect(14452164,10,16);return false;" onclick='return false;' id='PHOTONAV_14452164_10' >10</a><a href='#' onmouseover="GenReport_PhotoSelect(14452164,11,16);return false;" onclick='return false;' id='PHOTONAV_14452164_11' >11</a><a href='#' onmouseover="GenReport_PhotoSelect(14452164,12,16);return false;" onclick='return false;' id='PHOTONAV_14452164_12' >12</a><a href='#' onmouseover="GenReport_PhotoSelect(14452164,13,16);return false;" onclick='return false;' id='PHOTONAV_14452164_13' >13</a><a href='#' onmouseover="GenReport_PhotoSelect(14452164,14,16);return false;" onclick='return false;' id='PHOTONAV_14452164_14' >14</a><a href='#' onmouseover="GenReport_PhotoSelect(14452164,15,16);return false;" onclick='return false;' id='PHOTONAV_14452164_15' >15</a><a href='#' onmouseover="GenReport_PhotoSelect(14452164,16,16);return false;" onclick='return false;' id='PHOTONAV_14452164_16' >16</a><a id='linkShowPhotoNext_14452164'  href='#' onclick="GenReport_PhotoSelect(14452164,'next',16);return false;" >&raquo;</a><br /><a id='linkPhotoViewer_14452164' class='PHOTO_NAV_HELP' href='#'  onclick="PhotoViewer('?CRPT2=IXgUGzBIMaXJdB3hXD15DNhxycXIhdSwPL3wAMh4CbHQlWhcgGVYqIxpBd1YzDw3ZhWf8j8BgQqCMDwezCvXwzDzDdgh');return false;">(Click the image to use the photo viewer)</a></div></td></tr></table></td><td valign='top'><!-- --><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:8%"  class='V2R_LB' >ML#:</td><td style="width:17%"  class='V2R_L' >14452164</td><td style="width:8%"  class='V2R_LB' >Area:</td><td style="width:10%"  class='V2R_L' >143</td><td style="width:10%"  class='V2R_LB' >Status:</td><td style="width:10%"  class='V2R_L' >ACT</td><td style="width:8%"  class='V2R_LB' >Price:</td><td style="width:20%"  class='V2R_L' >$615,000</td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:9%"  class='V2R_LB' >Address:</td><td style="width:34%"  class='V2R_L' >4130 E BURNSIDE ST <a id='linkMapLink_14452164' href="javascript:MGS_ShowMap_Ex('http%3A%2F%2Frmls%2Ee%2Dmapping%2Ecom%2Fgv5%2Fv5ajax%2Fptdv2%2Fgeojet5%2Easp%3Flat%3D45%2E522537%26lon%3D%2D122%2E619357%26address%3D4130+E+BURNSIDE+ST%2C+Portland%2C+97214%26apn%3DR204079%26bdrms%3D3%26date%5Flist%3D2%2F21%2F2014%26Lot%2BSize%3D7K%252D9%252C999SF+%280%2E16%29%26price%3D%24615%2C000%26status%3DACT%26sqft%3D3150%26prop%5Ftype%3DDETACHD%26mls%5Fnumber%3D14452164%26baths%5Ftot%3D3%26ctyid%3D7%26prop%5Fcat%3DRES%26Photo%3Dhttp%3A%2F%2Fwww%2Ermlsweb%2Ecom%2FWEBPHOTOS%2F14400000%2F50000%2F2000%2F14452164%2D1%2Ejpg','GEOJET_BING');"  class='MAPLINK_ADDRESS_FULL' ><span class='BOXLINK BOXICON_M np' title='Map This Address'>&nbsp;M&nbsp;</span></a></td><td style="width:5%"  class='V2R_LB' >City:</td><td style="width:17%"  class='V2R_L' ><a id='linkUrlCity7' href='http://www.portlandonline.com/'  target='_blank' class='VIRTUALTOUR' title='City Web Site'>Portland</a></td><td style="width:6%"  class='V2R_LB' >Zip:</td><td style="width:5%"  class='V2R_L' >97214</td><td style="width:14%"  class='V2R_L' ></td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:10%"  class='V2R_LB' >XST/Dir:</td><td style="width:90%"  class='V2R_L' >East of 39th South Side of Burnside. Parking Behind House in Alley</td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:14%"  class='V2R_LB' >Bed/Baths:</td><td style="width:9%"  class='V2R_L' >3/3</td><td style="width:8%"  class='V2R_LB' >SQFT:</td><td style="width:14%"  class='V2R_L' >3150</td><td style="width:10%"  class='V2R_LB' >YrBuilt:</td><td style="width:9%"  class='V2R_L' >1916</td><td style="width:8%"  class='V2R_LB' >Style:</td><td style="width:28%"  class='V2R_L' >MEDIT</td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:15%"  class='V2R_LB' >Map Coord:</td><td style="width:11%"  class='V2R_L' >597/B/6</td><td style="width:8%"  class='V2R_LB' >Type:</td><td style="width:14%"  class='V2R_L' >DETACHD</td><td style="width:10%"  class='V2R_LB' >PTax/Yr:</td><td style="width:11%"  class='V2R_L' >$4,733.47</td><td style="width:10%"  class='V2R_LB' >LotSize:</td><td style="width:23%"  class='V2R_L' >7K-9,999SF</td></tr></table><table border='0' width='100%' cellpadding='0' cellspacing='0' class='V2_REPORT_ROW'><tr><td style="width:6%"  class='V2R_LB' >View:</td><td style="width:37%"  class='V2R_L' ></td><td style="width:8%"  class='V2R_LB' >Garage:</td><td style="width:10%"  class='V2R_L' >2/DETACHD</td><td style="width:8%"  class='V2R_LB' >Acres:</td><td style="width:15%"  class='V2R_L' >0.16</td></tr></table></td></tr></table></div><!-- Photo Block End --><!-- ================================================================================================== --></div><!-- REPORT_STDBOX --></td>
+<td width='20' class='np' valign='bottom'style='padding-left:3px;'><input type='checkbox' id='ItemCheckBox_14452164' name='MLID' value='14452164' class='np'onclick='GenReport_Check(this);'  /><span class='SPECIFIC_ORDER_LABEL' id='ORD_14452164'></span></td>
+</tr>
+<tr class='np'><td colspan='2' height='30' align='center'>
+<a id='linkGoToTopOfPage_2' class='LINK_STD' href='#PAGE_TOP'><img src='/v2/images/icons/gotop.gif' alt='Go to the top of the page' border='0' />Top</a>
+ 
+<a id='linkGoToBottomOfPage_2' class='LINK_STD' href='#PAGE_BOTTOM'><img src='/v2/images/icons/gobottom.gif' alt='Go to the bottom of the page' border='0' />Bottom</a>
+</td></tr>
+</table>
+<div class='REPORT_TOTALCOUNT np'> <span id='TOTALCOUNT'>8</span> Records</div>
+</div><!-- RG_REPORT end -->
+
+            <script type='text/javascript'>
+            <!--
+            GenReport_CheckRestore();
+            //-->
+            </script>
+            </form>
+
+
+</div><!-- RMLSWEB_PAGE2 -->
+</div><!-- RMLSWEB_PAGE1B -->
+</div><!-- RMLSWEB_PAGE1 -->
+<!-- inc_cb_footer.asp -->
+
+<a name='PAGE_BOTTOM'></a>
+
+<div id='NONPRINTSECTION_SQLPRINT'>
+
+</div>
+
+
+<div class='Footer_Disclaimer np'>&copy; <a href='http://www.rmlscentral.com/' title='About RMLS' target='_blank' >RMLS&trade;</a> 2014. ALL RIGHTS RESERVED. - INFORMATION NOT GUARANTEED AND SHOULD BE VERIFIED.<!--v2--><br />SQUARE FOOTAGE IS APPROXIMATE &amp; MAY INCLUDE BOTH FINISHED &amp; UNFINISHED AREAS - CONSULT BROKER FOR INFO.<br />SCHOOL AVAILABILITY SUBJECT TO CHANGE.<br /></div><div class='Footer_Disclaimer np' style='font-family:arial;font-style:normal;padding:1px;padding-left:10px;padding-right:10px;font-size:8pt; text-align:center; margin-top:-5px;'><a style="text-decoration:underline;color:blue;" href="http://oregonrealtors.org/About_OAR/buyadv.html" target='_blank'>OREGON PROPERTY BUYER ADVISORY</a></div><div class='Footer_Disclaimer np' style='font-family:arial;font-style:normal;font-size:8pt; text-align:center; margin-top:-4px;'><a style="text-decoration:underline;color:blue;" href="javascript:openWindow(600,680,'../public/copyrightinfringement.asp','scrollbars=yes,center=yes,status=no,help=no;');">CLAIMS OF COPYRIGHT INFRINGEMENT</a></div>
+
+        </div><!--MainScreen_Inner-->
+        </div><!--MainScreen_InnerShade-->
+        
+        </div><!--MainScreen_Outer-->
+    
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#SupplementsIncludeInPrint").hide();
+        $("#labelSupplementsIncludeInPrint").hide();
+        GenReport_PrepForSupplements(true);
+
+    });
+</script>
+
+</body>
+</html>
