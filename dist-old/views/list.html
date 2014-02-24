@@ -1,7 +1,0 @@
-<!-- include loader --><div ng-include="'views/component-loading.html'"></div><div class="header"><!--
-  <ul class="nav nav-pills pull-right">
-    <li class="active"><a ng-href="#">Home</a></li>
-    <li><a ng-href="#">About</a></li>
-    <li><a ng-href="#">Contact</a></li>
-  </ul>
-  --><h3 class="text-muted"><a id="logo" href="/">RMLS Maps</a></h3></div><div class="jumbotron" ng-controller="ListCtrl" ng-init="init()"><div class="row"><div class="col-sm-12"><h1>Results look good?</h1><table ng-table="" class="table"><thead><tr><th></th><th>Address</th><th>City</th><th>Zip</th><th>Price</th><tbody><tr ng-repeat="listing in listings"><td>{{$index + 1}}.</td><td>{{listing.address}}</td><td>{{listing.city}}</td><td>{{listing.zip}}</td><td>{{listing.price}}</td></table></div></div><div class="row"><div class="col-sm-12"><button class="btn btn-lg btn-success" ng-click="submit()">Submit</button> <button class="btn btn-lg" ng-click="cancel()">Cancel</button></div></div></div><div class="footer"><p>RMLS Maps</p></div>
